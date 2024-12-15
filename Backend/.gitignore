@@ -2,3 +2,5 @@
 /node_modules
 /FrontEnd/node_modules
 /FrontEnd/dist
+package-lock.json
+/FrontEnd/package-lock.json
