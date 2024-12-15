@@ -81,11 +81,10 @@ export const registerEvent = async (req, res, next) => {
       .json(`Error occurred while registering event: ${error}`)
   }
 }
-
-// module.exports = {
-//   getAllusers,
-//   getUserByID,
-//   updatedUser,
-//   deleteUser,
-//   registerEvent
-// }
+export default {
+  registerEvent,
+  getAllusers,
+  getUserByID,
+  updatedUser,
+  deleteUser
+}

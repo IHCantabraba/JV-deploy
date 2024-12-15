@@ -10,18 +10,18 @@ import express from 'express'
 
 const userRouter = express.Router()
 
-console.log(typeof getAllusers)
-userRouter.get('/', isAuth, isAdmin, getAllusers)
-userRouter.get('/:id', isAuth, getUserByID)
-userRouter.post(
-  '/competitions',
-  [isAuth],
-  [isAdmin],
-  upload.single('img'),
-  registerEvent
-)
-userRouter.post('/:id', [isAuth], upload.single('img'), updatedUser)
-userRouter.delete('/:id', [isAuth], [isAdmin], deleteUser)
+// console.log('type is : ', typeof getAllusers)
+// userRouter.get('/', isAuth, isAdmin, getAllusers)
+// userRouter.get('/:id', isAuth, getUserByID)
+// userRouter.post(
+//   '/competitions',
+//   [isAuth],
+//   [isAdmin],
+//   upload.single('img'),
+//   registerEvent
+// )
+// userRouter.post('/:id', [isAuth], upload.single('img'), updatedUser)
+// userRouter.delete('/:id', [isAuth], [isAdmin], deleteUser)
 
 // export default userRouter
 export default userRouter
