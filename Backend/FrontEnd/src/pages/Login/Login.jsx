@@ -37,7 +37,7 @@ const Login = () => {
     event.preventDefault()
 
     try {
-      const fetchResults = await fetch(`http://localhost:3000/api/auth/login`, {
+      const fetchResults = await fetch(`${BaseUrl}/api/auth/login`, {
         headers: new Headers({
           'Content-Type': 'application/json'
         }),
