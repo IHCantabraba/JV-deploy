@@ -18,6 +18,7 @@ import React, { useContext, useState } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import './Login.css'
 import { AvatarIconContext } from '../../providers/AvatarIconProvider'
+const BaseUrl = import.meta.env.VITE_BaseName
 const Login = () => {
   console.log('me re-renderizo')
   const [username, setUsername] = useState('')
